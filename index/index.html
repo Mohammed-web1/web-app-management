@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>GIM</title>
+</head>
+<body>
+    <div class="container">
+        <img src="th.jpg" alt="Logo" class="logo">
+        <div class="auth-container">
+            <div class="tabs">
+                <button class="tab active" onclick="switchTab('login')">Login</button>
+                <button class="tab" onclick="switchTab('signup')">Sign Up</button>
+            </div>
+            <div id="login-form" class="form">
+                <input type="email" id="login-gmail" placeholder="Gmail" required>
+                <input type="password" id="login-password" placeholder="Password" required>
+                <button class="action-button">Login</button>
+            </div>
+            <div id="signup-form" class="form" style="display: none;">
+                <input type="email" id="signup-gmail" placeholder="Gmail" required>
+                <input type="password" id="signup-password" placeholder="Password" required>
+                <select id="role" name="role">
+                    <option value="admin">Admin</option>
+                    <option value="technicien">Technician</option>
+                    <option value="employe">Employee</option>
+                    <option value="help-desk">Help Desk</option>
+                </select>
+                <button class="action-button">Sign Up</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

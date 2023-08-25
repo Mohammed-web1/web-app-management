@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestionnaire de Tickets</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">GIM</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#parametres">Gestionnaire de Tickets</a>
+                </li>
+                <!-- Ajoutez d'autres liens pour les différentes sections -->
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-md-8">
+      <h2>Tickets en Attente</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Description</th>
+            <th>Statut</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Remplir avec les données des tickets -->
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-4">
+      <h2>Détails du Ticket</h2>
+      <form>
+        <div class="mb-3">
+          <label for="ticketId" class="form-label">ID du Ticket</label>
+          <input type="text" class="form-control" id="ticketId" readonly>
+        </div>
+        <div class="mb-3">
+          <label for="description" class="form-label">Description du Problème</label>
+          <textarea class="form-control" id="description" rows="4" readonly></textarea>
+        </div>
+        <div class="mb-3">
+          <label for="status" class="form-label">Statut</label>
+          <select class="form-select" id="status">
+            <option value="en_attente">En Attente</option>
+            <option value="en_cours">En Cours</option>
+            <option value="termine">Terminé</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="actions" class="form-label">Actions Entreprises</label>
+          <textarea class="form-control" id="actions" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Mettre à Jour</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
