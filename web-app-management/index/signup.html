@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>GIM</title>
+</head>
+<body>
+    <div class="container">
+        <img src="{% static 'img/th.jpg' %}" alt="Logo" class="logo">
+        <div class="auth-container">
+            
+            <div class="tabs">
+                <h1 class="" >Sign Up</h1>
+            </div>
+            
+            <div id="" class="">
+                <form action="" method="post">
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <input type="submit" value="register">
+            </div>
+            <!--
+            <div id="signup-form" class="form" style="display: none;">
+                <input type="email" id="signup-gmail" placeholder="Gmail" required>
+                <input type="password" id="signup-password" placeholder="Password" required>
+                <select id="role" name="role">
+                    <option value="admin">Admin</option>
+                    <option value="technicien">Technician</option>
+                    <option value="employe">Employee</option>
+                    <option value="help-desk">Help Desk</option>
+                </select>
+                <button class="action-button">Sign Up</button>
+            </div>
+            -->
+        </div>
+    </div>
+
+    <!-- <script src="{% static 'js/scripts.js' %}" ></script> -->
+</body>
+</html>
