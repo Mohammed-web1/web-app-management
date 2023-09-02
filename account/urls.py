@@ -11,7 +11,7 @@ urlpatterns = [
     path('help_desk',views.help_desk , name='help_desk'),
     path('employer',views.employer , name='employer'),
     path('admin',views.admin , name='admin'),
-    path('signup',views.signup , name='signup'),
+    path('register',views.register , name='register'),
     path('logout/',auth_views.LogoutView.as_view(),name='logout'),
     #path('',auth_views.LoginView.as_view(template_name='index/index.html'),name='login'),
     path('',views.MyLoginView.as_view(template_name='index/index.html'),name='login'),

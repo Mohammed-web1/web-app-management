@@ -23,7 +23,5 @@ class User(models.Model):
 
     def __str__(self):
         return self.name
-    
-    def get_role(self):
-        return self.role
+
 

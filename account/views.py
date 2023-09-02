@@ -11,7 +11,7 @@ from django.contrib.auth.decorators import login_required
 
 # Create your views here.
 
-def signup(request):
+def register(request):
     form = SignUpForm()
     form.order_fields(field_order=['name','last_name','role','username','email','password1','password2'])
     if request.method =='POST':
@@ -58,7 +58,7 @@ def employer(request):
     #print(role.objects.get(role))
     role = User.objects.filter(user=request.user).values('role')
     if role[0]['role'] == 'employer':
-        return render(request,'employer/employ.html',{'username':username})
+        return render(request,'employer/employe.html',{'username':username})
     else:
         return render(request,'404.html')
 
