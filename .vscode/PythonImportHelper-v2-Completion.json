@@ -448,6 +448,150 @@
         "documentation": {}
     },
     {
+        "label": "gestion",
+        "kind": 2,
+        "importPath": "account.views",
+        "description": "account.views",
+        "peekOfCode": "def gestion(request):\n    return render(request,'admin/gestion.html')\n@login_required\ndef rappstas(request):\n    return render(request,'admin/rappstas.html')\n@login_required\ndef securité(request):\n    return render(request,'admin/securité.html')\n@login_required\ndef surveil(request):",
+        "detail": "account.views",
+        "documentation": {}
+    },
+    {
+        "label": "rappstas",
+        "kind": 2,
+        "importPath": "account.views",
+        "description": "account.views",
+        "peekOfCode": "def rappstas(request):\n    return render(request,'admin/rappstas.html')\n@login_required\ndef securité(request):\n    return render(request,'admin/securité.html')\n@login_required\ndef surveil(request):\n    return render(request,'admin/surveil.html')\n@login_required\ndef etatdedem(request):",
+        "detail": "account.views",
+        "documentation": {}
+    },
+    {
+        "label": "securité",
+        "kind": 2,
+        "importPath": "account.views",
+        "description": "account.views",
+        "peekOfCode": "def securité(request):\n    return render(request,'admin/securité.html')\n@login_required\ndef surveil(request):\n    return render(request,'admin/surveil.html')\n@login_required\ndef etatdedem(request):\n    return render(request,'employer/etatdedem.html')\n@login_required\ndef info(request):",
+        "detail": "account.views",
+        "documentation": {}
+    },
+    {
+        "label": "surveil",
+        "kind": 2,
+        "importPath": "account.views",
+        "description": "account.views",
+        "peekOfCode": "def surveil(request):\n    return render(request,'admin/surveil.html')\n@login_required\ndef etatdedem(request):\n    return render(request,'employer/etatdedem.html')\n@login_required\ndef info(request):\n    return render(request,'employer/info.html')\n@login_required\ndef notif(request):",
+        "detail": "account.views",
+        "documentation": {}
+    },
+    {
+        "label": "etatdedem",
+        "kind": 2,
+        "importPath": "account.views",
+        "description": "account.views",
+        "peekOfCode": "def etatdedem(request):\n    return render(request,'employer/etatdedem.html')\n@login_required\ndef info(request):\n    return render(request,'employer/info.html')\n@login_required\ndef notif(request):\n    return render(request,'employer/notif.html')\n@login_required\ndef prodem(request):",
+        "detail": "account.views",
+        "documentation": {}
+    },
+    {
+        "label": "info",
+        "kind": 2,
+        "importPath": "account.views",
+        "description": "account.views",
+        "peekOfCode": "def info(request):\n    return render(request,'employer/info.html')\n@login_required\ndef notif(request):\n    return render(request,'employer/notif.html')\n@login_required\ndef prodem(request):\n    return render(request,'employer/prodem.html')\n@login_required\ndef assistance(request):",
+        "detail": "account.views",
+        "documentation": {}
+    },
+    {
+        "label": "notif",
+        "kind": 2,
+        "importPath": "account.views",
+        "description": "account.views",
+        "peekOfCode": "def notif(request):\n    return render(request,'employer/notif.html')\n@login_required\ndef prodem(request):\n    return render(request,'employer/prodem.html')\n@login_required\ndef assistance(request):\n    return render(request,'help disk/assistance.html')\n@login_required\ndef connaissance(request):",
+        "detail": "account.views",
+        "documentation": {}
+    },
+    {
+        "label": "prodem",
+        "kind": 2,
+        "importPath": "account.views",
+        "description": "account.views",
+        "peekOfCode": "def prodem(request):\n    return render(request,'employer/prodem.html')\n@login_required\ndef assistance(request):\n    return render(request,'help disk/assistance.html')\n@login_required\ndef connaissance(request):\n    return render(request,'help disk/connaissance.html')\n@login_required\ndef demand(request):",
+        "detail": "account.views",
+        "documentation": {}
+    },
+    {
+        "label": "assistance",
+        "kind": 2,
+        "importPath": "account.views",
+        "description": "account.views",
+        "peekOfCode": "def assistance(request):\n    return render(request,'help disk/assistance.html')\n@login_required\ndef connaissance(request):\n    return render(request,'help disk/connaissance.html')\n@login_required\ndef demand(request):\n    return render(request,'help disk/demand.html')\n@login_required\ndef redirection(request):",
+        "detail": "account.views",
+        "documentation": {}
+    },
+    {
+        "label": "connaissance",
+        "kind": 2,
+        "importPath": "account.views",
+        "description": "account.views",
+        "peekOfCode": "def connaissance(request):\n    return render(request,'help disk/connaissance.html')\n@login_required\ndef demand(request):\n    return render(request,'help disk/demand.html')\n@login_required\ndef redirection(request):\n    return render(request,'help disk/redirection.html')\n@login_required\ndef comm(request):",
+        "detail": "account.views",
+        "documentation": {}
+    },
+    {
+        "label": "demand",
+        "kind": 2,
+        "importPath": "account.views",
+        "description": "account.views",
+        "peekOfCode": "def demand(request):\n    return render(request,'help disk/demand.html')\n@login_required\ndef redirection(request):\n    return render(request,'help disk/redirection.html')\n@login_required\ndef comm(request):\n    return render(request,'technicien/comm.html')\n@login_required\ndef GPI(request):",
+        "detail": "account.views",
+        "documentation": {}
+    },
+    {
+        "label": "redirection",
+        "kind": 2,
+        "importPath": "account.views",
+        "description": "account.views",
+        "peekOfCode": "def redirection(request):\n    return render(request,'help disk/redirection.html')\n@login_required\ndef comm(request):\n    return render(request,'technicien/comm.html')\n@login_required\ndef GPI(request):\n    return render(request,'technicien/GPI.html')\n@login_required\ndef GTA(request):",
+        "detail": "account.views",
+        "documentation": {}
+    },
+    {
+        "label": "comm",
+        "kind": 2,
+        "importPath": "account.views",
+        "description": "account.views",
+        "peekOfCode": "def comm(request):\n    return render(request,'technicien/comm.html')\n@login_required\ndef GPI(request):\n    return render(request,'technicien/GPI.html')\n@login_required\ndef GTA(request):\n    return render(request,'technicien/GTA.html')\n@login_required\ndef ticket(request):",
+        "detail": "account.views",
+        "documentation": {}
+    },
+    {
+        "label": "GPI",
+        "kind": 2,
+        "importPath": "account.views",
+        "description": "account.views",
+        "peekOfCode": "def GPI(request):\n    return render(request,'technicien/GPI.html')\n@login_required\ndef GTA(request):\n    return render(request,'technicien/GTA.html')\n@login_required\ndef ticket(request):\n    return render(request,'technicien/ticket.html')\n@login_required\ndef tech(request):",
+        "detail": "account.views",
+        "documentation": {}
+    },
+    {
+        "label": "GTA",
+        "kind": 2,
+        "importPath": "account.views",
+        "description": "account.views",
+        "peekOfCode": "def GTA(request):\n    return render(request,'technicien/GTA.html')\n@login_required\ndef ticket(request):\n    return render(request,'technicien/ticket.html')\n@login_required\ndef tech(request):\n    role = User.objects.filter(user=request.user)\n    role = request.user\n    #print(role.objects.get(role))",
+        "detail": "account.views",
+        "documentation": {}
+    },
+    {
+        "label": "ticket",
+        "kind": 2,
+        "importPath": "account.views",
+        "description": "account.views",
+        "peekOfCode": "def ticket(request):\n    return render(request,'technicien/ticket.html')\n@login_required\ndef tech(request):\n    role = User.objects.filter(user=request.user)\n    role = request.user\n    #print(role.objects.get(role))\n    role = User.objects.filter(user=request.user).values('role')\n    if role[0]['role'] == 'technicien':\n        return render(request,'technicien/technicien.html',{'x':role})",
+        "detail": "account.views",
+        "documentation": {}
+    },
+    {
         "label": "tech",
         "kind": 2,
         "importPath": "account.views",

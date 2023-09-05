@@ -33,19 +33,19 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="file:///C:/Users/Admin/Desktop/projet%20de%20stage/admin/gestion.html">Settings</a>
+            <a class="nav-link" href="{% url 'gestion' %}">Settings</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'register' %}">User Accounts</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="file:///C:/Users/Admin/Desktop/projet%20de%20stage/admin/surveil.html">Monitoring</a>
+            <a class="nav-link" href="{% url 'surveil' %}">Monitoring</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="file:///C:/Users/Admin/Desktop/projet%20de%20stage/admin/rappstas.html">Reports</a>
+            <a class="nav-link" href="{% url 'rappstas' %}">Reports</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="file:///C:/Users/Admin/Desktop/projet%20de%20stage/admin/securit%C3%A9.html">Security</a>
+            <a class="nav-link" href="{% url 'securité' %}">Security</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'logout' %}">Logout</a>

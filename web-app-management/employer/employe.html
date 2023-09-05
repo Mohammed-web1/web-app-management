@@ -33,16 +33,16 @@
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="file:///C:/Users/Admin/Desktop/projet%20de%20stage/employer/etatdedem.html">etat de vos demande</a>
+            <a class="nav-link" href="{% url 'etatdedem' %}">etat de vos demande</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="file:///C:/Users/Admin/Desktop/projet%20de%20stage/employer/info.html">Additional Info</a>
+            <a class="nav-link" href="{% url 'info' %}">Additional Info</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="file:///C:/Users/Admin/Desktop/projet%20de%20stage/employer/notif.html">Notifications</a>
+            <a class="nav-link" href="{% url 'notif' %}">Notifications</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="file:///C:/Users/Admin/Desktop/projet%20de%20stage/employer/prodem.html">Report Problem</a>
+            <a class="nav-link" href="{% url 'prodem' %}">Report Problem</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'logout' %}">Logout</a>

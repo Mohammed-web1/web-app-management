@@ -1,4 +1,5 @@
 from django.shortcuts import render,redirect
+
 from .forms import SignUpForm
 from django.contrib.auth import login as auth_login
 from .models import User
@@ -31,6 +32,74 @@ def register(request):
             return redirect('admin')
 
     return render(request,'admin/gestutil.html',{'form':form})
+
+@login_required
+def gestion(request):
+    return render(request,'admin/gestion.html')
+
+
+@login_required
+def rappstas(request):
+    return render(request,'admin/rappstas.html')
+
+@login_required
+def securité(request):
+    return render(request,'admin/securité.html')
+
+@login_required
+def surveil(request):
+    return render(request,'admin/surveil.html')
+
+@login_required
+def etatdedem(request):
+    return render(request,'employer/etatdedem.html')
+
+@login_required
+def info(request):
+    return render(request,'employer/info.html')
+
+@login_required
+def notif(request):
+    return render(request,'employer/notif.html')
+
+@login_required
+def prodem(request):
+    return render(request,'employer/prodem.html')
+
+@login_required
+def assistance(request):
+    return render(request,'help disk/assistance.html')
+
+@login_required
+def connaissance(request):
+    return render(request,'help disk/connaissance.html')
+
+@login_required
+def demand(request):
+    return render(request,'help disk/demand.html')
+
+@login_required
+def redirection(request):
+    return render(request,'help disk/redirection.html')
+
+@login_required
+def comm(request):
+    return render(request,'technicien/comm.html')
+
+@login_required
+def GPI(request):
+    return render(request,'technicien/GPI.html')
+
+
+@login_required
+def GTA(request):
+    return render(request,'technicien/GTA.html')
+
+@login_required
+def ticket(request):
+    return render(request,'technicien/ticket.html')
+
+
 
 @login_required
 def tech(request):
