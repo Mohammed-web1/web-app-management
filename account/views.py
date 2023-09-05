@@ -6,7 +6,7 @@ from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.views import LoginView
 from django.shortcuts import resolve_url
 from django.conf import settings
-
+from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
 # Create your views here.
@@ -21,15 +21,16 @@ def register(request):
             user = form.save()
 
             print(user)
-            auth_login(request,user)
+            #auth_login(request,user)
             new_user = User.objects.create(
-                user = request.user,
+                user = user,
                 name=form.cleaned_data.get('name'),
                 role=form.cleaned_data.get('role'),
             )
-            return redirect('logout')
+            messages.success(request, 'The user has been created successfully.')
+            return redirect('admin')
 
-    return render(request,'index/signup.html',{'form':form})
+    return render(request,'admin/gestutil.html',{'form':form})
 
 @login_required
 def tech(request):

@@ -36,7 +36,7 @@
             <a class="nav-link" href="file:///C:/Users/Admin/Desktop/projet%20de%20stage/admin/gestion.html">Settings</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="file:///C:/Users/Admin/Desktop/projet%20de%20stage/admin/gestutil.html">User Accounts</a>
+            <a class="nav-link" href="{% url 'register' %}">User Accounts</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="file:///C:/Users/Admin/Desktop/projet%20de%20stage/admin/surveil.html">Monitoring</a>
@@ -57,6 +57,16 @@
 
   <!-- Page Content -->
   <div class="container mt-5">
+    {% if messages %}
+		<div class="messages">
+		{% for message in messages %}
+			<div class="alert {% if message.tags %}alert-{{ message.tags }}"{% endif %}>
+				{{ message }}
+			</div>
+		{% endfor %}
+		</div>
+	{% endif %}
+
     <h1>Welcome {{ username }} to admin Dashboard</h1>
     <!-- Your content here -->
   </div>

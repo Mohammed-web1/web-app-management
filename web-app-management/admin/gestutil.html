@@ -28,26 +28,34 @@
     <div class="container mt-4">
         <div id="utilisateurs" class="mb-4">
             <h2>Gérer les Comptes Utilisateurs et les Permissions d'Accès</h2>
-            <table class="table table-striped">
-                <thead>
-                    <tr>
-                        <th>Nom d'Utilisateur</th>
-                        <th>Rôle</th>
-                        <th>Actions</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Utilisateur1</td>
-                        <td>Admin</td>
-                        <td>
-                            <button class="btn btn-sm btn-info">Modifier</button>
-                            <button class="btn btn-sm btn-danger">Supprimer</button>
-                        </td>
-                    </tr>
-                    <!-- Ajoutez d'autres lignes pour les autres utilisateurs -->
-                </tbody>
-            </table>
+            <div class="auth-container">
+            
+                <div class="tabs">
+                    <h1 class="" >register</h1>
+                </div>
+                
+                <div id="" class="">
+                    <form action="" method="post">
+                        {% csrf_token %}
+                        
+                        {% include 'form.html' %} <br>
+                        <button type="submit" class="btn btn-primary btn-block">Log in</button>
+                    </form>
+                </div>
+                <!--
+                <div id="signup-form" class="form" style="display: none;">
+                    <input type="email" id="signup-gmail" placeholder="Gmail" required>
+                    <input type="password" id="signup-password" placeholder="Password" required>
+                    <select id="role" name="role">
+                        <option value="admin">Admin</option>
+                        <option value="technicien">Technician</option>
+                        <option value="employe">Employee</option>
+                        <option value="help-desk">Help Desk</option>
+                    </select>
+                    <button class="action-button">Sign Up</button>
+                </div>
+                -->
+            </div>
         </div>
         <!-- Ajoutez ici d'autres sections pour gérer les autres fonctionnalités -->
     </div>
